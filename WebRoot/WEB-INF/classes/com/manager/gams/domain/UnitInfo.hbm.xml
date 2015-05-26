@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.manager.gams.domain">
+	<class name="UnitInfo" table="M_UNIT_INFO">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" length="10" />
+			<generator class="native" />
+		</id>
+		<property name="utdate" type="java.lang.String">
+			<column name="UT_DATE" length="20" />
+		</property>
+		<property name="utno" type="java.lang.String">
+			<column name="UT_NO" length="20" />
+		</property>
+		<property name="utname" type="java.lang.String">
+			<column name="UT_NAME" length="20" />
+		</property>
+		<property name="utspec" type="java.lang.String">
+			<column name="UT_SPEC" length="20" />
+		</property>
+		<property name="utcharger" type="java.lang.String">
+			<column name="UT_CHARGER" length="20" />
+		</property>
+		<property name="utuse" type="java.lang.String">
+			<column name="UT_USE" length="20" />
+		</property>
+		<property name="utplace" type="java.lang.String">
+			<column name="UT_PLACE" length="20" />
+		</property>
+		<property name="utqty" type="java.lang.String">
+			<column name="UT_QTY" length="10" />
+		</property>
+		<property name="utstatus" type="java.lang.String">
+			<column name="UT_STATUS" length="10" />
+		</property>
+		<property name="utremark" type="java.lang.String">
+			<column name="UT_REMARK" length="100" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.manager.sys.domain">
+	<class name="FuncInfo" table="M_FUNCTION">
+		<id name="id" type="java.lang.Integer">
+			<column name="FUNC_ID" />
+			<generator class="native" />
+		</id>
+		<property name="funcName" type="java.lang.String">
+			<column name="FUNC_NAME" length="20" />
+		</property>
+		<property name="funcSign" type="java.lang.String">
+			<column name="FUNC_SIGN" length="10" />
+		</property>
+		<property name="funcDesc" type="java.lang.String">
+			<column name="FUNC_DESC" length="100" />
+		</property>
+		<many-to-one name="module" lazy="false">
+			<column name="MODULE_ID" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

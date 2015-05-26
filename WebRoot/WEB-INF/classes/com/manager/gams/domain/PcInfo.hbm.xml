@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+          
+<hibernate-mapping package="com.manager.gams.domain">
+	<class name="PcInfo"  table="M_PC_INFO">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" length="10"/>
+			<generator class="native"/>
+		</id>
+		<property name="pcdate" type="java.lang.String">
+			<column name="PC_DATE" length="20" />
+		</property>
+		<property name="pcno" type="java.lang.String">
+			<column name="PC_NO" length="20" />
+		</property>
+				<property name="pcmodel" type="java.lang.String">
+			<column name="PC_MODEL" length="20" />
+		</property>
+		<property name="pcsn" type="java.lang.String">
+			<column name="PC_SN" length="20" />
+		</property>
+				<property name="pccpu" type="java.lang.String">
+			<column name="PC_CPU" length="100" />
+		</property>
+		<property name="pcmemory" type="java.lang.String">
+			<column name="PC_MEMORY" length="20" />
+		</property>
+				<property name="pchdd" type="java.lang.String">
+			<column name="PC_HDD" length="20" />
+		</property>
+		<property name="pccharger" type="java.lang.String">
+			<column name="PC_CHARGER" length="10" />
+		</property>
+				<property name="pcuse" type="java.lang.String">
+			<column name="PC_USE" length="100" />
+		</property>
+		<property name="pcqty" type="java.lang.String">
+			<column name="PC_QTY" length="10" />
+		</property>
+		<property name="pcplace" type="java.lang.String">
+			<column name="PC_PLACE" length="50" />
+		</property>
+		<property name="pcstatus" type="java.lang.String">
+			<column name="PC_STATUS" length="20" />
+		</property>
+		<property name="pcremark" type="java.lang.String">
+			<column name="PC_REMARK" length="100" />
+		</property>
+	</class>
+</hibernate-mapping>

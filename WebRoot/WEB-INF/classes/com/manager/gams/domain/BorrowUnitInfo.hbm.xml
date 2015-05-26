@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.manager.gams.domain">
+	<class name="BorrowUnitInfo" table="M_BORROWUNIT_INFO">
+		<id name="bid" type="java.lang.Integer">
+			<column name="ID" length="10" />
+			<generator class="native" />
+		</id>
+		<property name="iou" type="java.lang.String" length="10" />
+		<property name="ioutno" type="java.lang.String" length="20" />
+		<property name="ioutname" type="java.lang.String" length="20" />
+		<property name="ioutspec" type="java.lang.String" length="20" />
+		<property name="ioutcharger" type="java.lang.String" length="10" />
+		<property name="ioutplace" type="java.lang.String" length="50" />
+		<property name="ioutstatus" type="java.lang.String" length="20" />
+		<property name="ioyon" type="java.lang.String" length="10" />
+		<property name="ioindate" type="java.lang.String" length="20" />
+		<property name="ioperson" type="java.lang.String" length="20" />
+		<property name="ioopdate" type="java.lang.String" length="50" />
+		<property name="ioopperson" type="java.lang.String" length="50" />
+		<property name="ioremark" type="java.lang.String" length="200" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+          
+<hibernate-mapping package="com.manager.sys.domain">
+	<class name="UserInfo"  table="M_USR_INFO">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" length="10"/>
+			<generator class="native"/>
+		</id>
+		<property name="usrName" type="java.lang.String">
+			<column name="USR_NAME" length="20" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="PASSWORD" length="100" />
+		</property>
+		<property name="part" type="java.lang.String">
+			<column name="USR_PART" length="20" />
+		</property>
+		<property name="partid" type="java.lang.String">
+			<column name="PARTID" length="20" />
+		</property>
+		<property name="createTime" type="java.sql.Timestamp">
+			<column name="CREATE_TIME" />
+		</property>
+		<property name="status" type="java.lang.Integer">
+			<column name="STATUS" length="2" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="REMARK" length="100" />
+		</property>
+		<set name="roles" table="m_usr_role" cascade="save-update">
+			<key>
+				<column name="USR_ID"/>
+			</key>
+			<many-to-many class="com.manager.sys.domain.RoleInfo">
+				<column name="ROLE_ID"/>
+			</many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

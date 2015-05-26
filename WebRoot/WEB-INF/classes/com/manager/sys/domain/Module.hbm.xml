@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.manager.sys.domain">
+	<class name="Module" table="M_MODULE">
+		<id name="id" type="java.lang.Integer">
+			<column name="MODULE_ID" />
+			<generator class="native" />
+		</id>
+		<property name="moduleName" type="java.lang.String">
+			<column name="MODULE_NAME" length="20" />
+		</property>
+		<property name="moduleSign" type="java.lang.String">
+			<column name="MODULE_SIGN" length="100" />
+		</property>
+		<property name="moduleHref" type="java.lang.String">
+			<column name="MODULE_HREF" />
+		</property>
+		<property name="moduleDesc" type="java.lang.String">
+			<column name="MODULE_DESC" length="100" />
+		</property>
+		<property name="moduleOrder" type="java.lang.Integer">
+			<column name="MODULE_ORDER" length="10" />
+		</property>
+		<set name="funcs" cascade="save-update" inverse="true">
+			<key>
+				<column name="MODULE_ID" />
+			</key>
+			<one-to-many class="com.manager.sys.domain.FuncInfo" />
+		</set>
+		<many-to-one name="parent">
+			<column name="PARENT_ID" length="10" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>
