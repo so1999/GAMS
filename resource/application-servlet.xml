@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd"
+	default-autowire="byName">
+	<bean id="login" class="com.manager.sys.action.LoginAction" />
+	<bean id="role" class="com.manager.sys.action.RoleInfoAction" />
+	<bean id="module" class="com.manager.sys.action.ModuleAction" />
+	<bean id="usrInfo" class="com.manager.sys.action.UserInfoAction" />
+	<bean id="func" class="com.manager.sys.action.FunctionAction" />
+	<bean id="acusr" class="com.manager.sys.action.ActiveUsrAction" />
+	
+	<bean id="part" class="com.manager.gams.action.PartAction" />
+	<bean id="pc" class="com.manager.gams.action.PcAction" />
+	<bean id="unit" class="com.manager.gams.action.UnitAction" />
+	<bean id="borr" class="com.manager.gams.action.BorrowAction" />
+	<bean id="per" class="com.manager.gams.action.PerAction" />
+
+</beans>

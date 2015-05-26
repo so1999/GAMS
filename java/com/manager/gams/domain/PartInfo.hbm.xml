@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+          
+<hibernate-mapping package="com.manager.gams.domain">
+	<class name="PartInfo"  table="M_PART_INFO">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" length="10"/>
+			<generator class="native"/>
+		</id>
+		<property name="part" type="java.lang.String">
+			<column name="PART" length="20" />
+		</property>
+		<property name="partid" type="java.lang.String">
+			<column name="PARTID" length="100" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+
+.tdleftlabel {
+	padding-right: 3px;
+	width: 100px;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.textright {
+	text-align: right;
+}
+
+.label-color {
+	color: #0081C2;
+}
+
+.tablelayout {
+	background-color: white;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+a {
+	text-decoration: none;
+}
+
+.tablelayout tr {
+	height: 20px;
+	line-height: 20px;
+}
+
+.tablelayout tr td {
+	height: 26px;
+	padding-left: 4px;
+	line-height: 26px;
+	border: 1px solid #0081C2;
+}
+
+.tablelayout .tdlabel {
+	text-align: right;
+	padding-right: 3px;
+	width: 100px;
+	color: #0081C2;
+}
+
+.selfbg {
+	background: url("images/selfbg.jpg") bottom center;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.error {
+	border: 1px solid red;
+}
+
+input[type='text'] {
+	padding: 0px;
+	margin: 0px;
+	height: 20px;
+}
+
+input[class='x-form-text']:focus,textarea[class='x-form-text']:focus {
+	border: 1px solid green;
+	padding: 0px;
+}
+
+input:active {
+	border: 1px solid green;
+}
+
+.x-form-text {
+	background-image: url('images/text-bg.gif');
+	background-color: #ffffff;
+	border: 1px solid #95B8E7;
+	padding: 0px;
+	font-weight: bold;
+	height: 20px;
+}
+
+.selected {
+	line-height: 20px;
+	height: 20px;
+	background-color: #0081c2;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #0081c2;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li  a {
+	line-height: 20px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #0081c2;
+	width: 99%;
+	height: 22px;
+	cursor: pointer;
+}
+
+ul li  a:hover {
+	cursor: pointer;
+	line-height: 20px;
+	height: 20px;
+	background-color: #0081c2;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #0081c2;
+}
+
+.north-header {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	height: 58px;
+	width: 1000px;
+	background: url('images/top-10.gif') no-repeat; /* #19446a*/
+	background-position: right;
+}
+
+.north-header .north-title {
+	color: #000000;
+	font-size: 34px;
+	padding-left: 90px;
+	line-height: 50px;
+	background: url('images/top-8.gif') no-repeat;
+	background-position: left;
+	height: 60px;
+	/*opacity: 0.6;
+		filter: alpha(opacity =     
+		                                                         
+		        110);
+	*/
+}
+

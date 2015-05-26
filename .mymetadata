@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="GAMS"
+  id="myeclipse.1411092860727"
+  context-root="/GAMS"
+  j2ee-spec="6.0"
+  archive="GAMS.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
